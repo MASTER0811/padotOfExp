@@ -1,0 +1,39 @@
+:root{
+    --web-header-bg:#ffffffa6;
+}
+.web-dark-mode{
+    --web-header-bg:#454545a6;
+}
+
+
+@media (max-width:768px) {
+    .option span:first-child{
+        display: flex;
+    }
+    nav[navItem]{
+        position: fixed;
+        background:var(--web-header-bg) ;
+        top: 11%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 1.2rem 3rem;
+        z-index: -10;
+        clip-path: polygon(0 0 ,100% 0 , 100% 0 , 0 0);
+
+    }
+    nav[navItem] a{
+        border-radius: 9999px;
+    }
+    header nav.active{
+        clip-path: polygon(0 0 ,100% 0 , 100% 100%,0 100%);
+    }
+
+    .terminal{
+        width: 680px;
+        height: 450px;
+    }
+    .login-container{
+        top: 12%;
+    }
+}

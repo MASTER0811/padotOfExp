@@ -1,0 +1,21 @@
+@media (max-width:320px) {
+    .terminal{
+        width: 280px;
+        height: 450px;
+    }
+
+    .media-none{
+        visibility: hidden;
+    }
+    .terminal-code code span{
+        font-size: 14.5px;
+    }
+    #animate-text{
+        font-size: 12.5px;
+    }
+    header[header]{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
