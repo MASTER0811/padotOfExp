@@ -1,0 +1,64 @@
+:root{
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --border-bg:#ffffff;
+    --border-color:#444444;
+
+    --border-v-hover-bg:#712e85;
+    --border-a-hover-bg:#efe25b;
+}
+.web-dark-mode{
+    --border-bg:#606060;
+    --border-color:#ffffff;
+
+    --border-v-hover-bg:#712e85b2;
+    --border-a-hover-bg:#efe35bb2;
+}
+
+[divelement]{
+    display: flex;
+}
+
+.app{
+    text-align: center;
+    padding: 35px 10px;
+    width: 280px;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 6px;
+    background: var(--border-bg);
+    margin: 0 30px;
+    box-shadow: var(--shadow);
+}
+.app ion-icon{
+    font-size: 3em;
+}
+.app h2{
+    font-size: 22px;
+    padding: 15px 0;
+    font-weight: bolder;
+    color: var(--border-color);
+    font-family: 'Poppins',sans-serif;
+}
+[video-logo]{
+    color: #712e85;
+}
+[audio-logo]{
+    color: #efe25b;
+}
+
+.app:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 54px 55px, rgba(0, 0, 0, 0.02) 0px -12px 30px, rgba(0, 0, 0, 0.02) 0px 4px 6px, rgba(0, 0, 0, 0.07) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.app:hover ion-icon{
+    color: #fff;
+}
+.app:hover h2{
+    color: #fff;
+}
+
+[video]:hover{
+    background-color: var(--border-v-hover-bg);
+}
+[audio]:hover{
+    background-color: var(--border-a-hover-bg);
+}
